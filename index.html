@@ -34,7 +34,8 @@
     
     <!-- Typeform Embed -->
     <script src="https://embed.typeform.com/next/embed.js"></script>
-    
+    <link rel="stylesheet" href="https://embed.typeform.com/next/css/popup.css" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         
@@ -1152,8 +1153,10 @@ Wat bieden wij:
                 if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
                     console.log('✅ Typeform SDK found, creating popup...');
 
-                    // Use form slug (z1GroMCc) - full form ID gives 401 error
-                    const popup = window.tf.createPopup('z1GroMCc', {
+                    // Create popup and destructure open function
+                    const { open } = window.tf.createPopup('z1GroMCc', {
+                        size: 100,  // 100% fullscreen (default)
+                        medium: 'embed-sdk',
                         onSubmit: () => {
                             console.log('✅ Form submitted');
                         },
@@ -1165,8 +1168,8 @@ Wat bieden wij:
                         }
                     });
 
-                    popup.open();
-                    console.log('✅ Typeform popup.open() called');
+                    open();
+                    console.log('✅ Typeform popup opened');
                 } else {
                     console.warn('⚠️ Typeform SDK not available, using fallback');
                     // Fallback: open in new window
