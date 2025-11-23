@@ -1117,16 +1117,18 @@ Wat bieden wij:
         }
 
         function openFullAnalysisForm() {
+            console.log('🚀 Opening Typeform...');
+
             // Close results modal
             document.getElementById('resultsModal').classList.remove('active');
-            
+
             // Tracking
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'full_analysis_requested', {
                     event_category: 'engagement'
                 });
             }
-            
+
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'Lead', {
                     content_name: 'Full Vacature Analyse',
@@ -1134,28 +1136,47 @@ Wat bieden wij:
                     currency: 'EUR'
                 });
             }
-            
+
             sendServerSideEvent('Lead', {
                 content_name: 'Full Vacature Analyse',
                 value: 0,
                 currency: 'EUR'
             });
-            
-            // Open Typeform with fullscreen popup settings
+
+            // Get vacature text
             const vacatureText = document.getElementById('vacatureText').value;
-            const tf = window.tf;
-            if (tf && tf.createPopup) {
-                tf.createPopup('https://form.typeform.com/to/z1GroMCc', {
-                    hidden: {
-                        vacature_text: vacatureText.substring(0, 500)
-                    },
-                    mode: 'popup',
-                    autoClose: 3000,
-                    size: 100,
-                    hideHeaders: false,
-                    hideFooter: false
-                }).open();
-            } else {
+            console.log('📝 Vacature length:', vacatureText.length);
+
+            // Open Typeform with correct form ID format
+            try {
+                if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
+                    console.log('✅ Typeform SDK found, creating popup...');
+
+                    // Use form ID directly, not full URL
+                    const popup = window.tf.createPopup('01K25SKWYTKZ05DAHER9D52J94', {
+                        hidden: {
+                            vacature_text: vacatureText
+                        },
+                        onSubmit: () => {
+                            console.log('✅ Form submitted');
+                        },
+                        onReady: () => {
+                            console.log('✅ Form ready');
+                        }
+                    });
+
+                    popup.open();
+                    console.log('✅ Typeform popup opened');
+                } else {
+                    console.warn('⚠️ Typeform SDK not available, using fallback');
+                    // Fallback: open in new window with full URL
+                    const url = 'https://form.typeform.com/to/z1GroMCc#vacature_text=' + encodeURIComponent(vacatureText.substring(0, 500));
+                    window.open(url, '_blank', 'width=800,height=700,scrollbars=yes');
+                }
+            } catch (error) {
+                console.error('❌ Typeform error:', error);
+                console.error('Error details:', error.message, error.stack);
+                alert('Typeform wordt geopend in een nieuw venster...');
                 window.open('https://form.typeform.com/to/z1GroMCc', '_blank');
             }
         }
