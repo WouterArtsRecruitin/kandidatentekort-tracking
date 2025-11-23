@@ -1148,14 +1148,15 @@ Wat bieden wij:
             const vacatureText = document.getElementById('vacatureText').value;
             console.log('📝 Vacature length:', vacatureText.length);
 
-            // Open Typeform popup - force fullscreen centered
+            // Open Typeform popup
             try {
                 if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
                     console.log('✅ Typeform SDK found, creating popup...');
 
-                    // Create fullscreen centered popup
-                    const popup = window.tf.createPopup('z1GroMCc', {
-                        size: 80,  // 80% of screen
+                    // Create popup and destructure open function
+                    const { open } = window.tf.createPopup('z1GroMCc', {
+                        size: 100,  // 100% fullscreen (default)
+                        medium: 'embed-sdk',
                         onSubmit: () => {
                             console.log('✅ Form submitted');
                         },
@@ -1167,8 +1168,8 @@ Wat bieden wij:
                         }
                     });
 
-                    popup.open();
-                    console.log('✅ Typeform popup.open() called');
+                    open();
+                    console.log('✅ Typeform popup opened');
                 } else {
                     console.warn('⚠️ Typeform SDK not available, using fallback');
                     // Fallback: open in new window
