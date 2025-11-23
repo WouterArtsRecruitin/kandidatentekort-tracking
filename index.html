@@ -1152,11 +1152,8 @@ Wat bieden wij:
                 if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
                     console.log('✅ Typeform SDK found, creating popup...');
 
-                    // Create popup with full URL and hidden field
-                    const popup = window.tf.createPopup('z1GroMCc', {
-                        hidden: {
-                            vacature_text: vacatureText
-                        },
+                    // Create popup with updated form ID (no hidden fields)
+                    const popup = window.tf.createPopup('01K25SKWYTKZ05DAHER9D52J94', {
                         onSubmit: () => {
                             console.log('✅ Form submitted');
                         },
@@ -1172,9 +1169,8 @@ Wat bieden wij:
                     console.log('✅ Typeform popup.open() called');
                 } else {
                     console.warn('⚠️ Typeform SDK not available, using fallback');
-                    // Fallback: open in new window with full URL
-                    const url = 'https://form.typeform.com/to/z1GroMCc#vacature_text=' + encodeURIComponent(vacatureText.substring(0, 500));
-                    window.open(url, '_blank', 'width=800,height=700,scrollbars=yes');
+                    // Fallback: open in new window
+                    window.open('https://form.typeform.com/to/z1GroMCc', '_blank', 'width=800,height=700,scrollbars=yes');
                 }
             } catch (error) {
                 console.error('❌ Typeform error:', error);
