@@ -9,6 +9,20 @@
 # FACEBOOK_API_TOKEN = your token here
 # Or use Netlify CLI: netlify env:set FACEBOOK_API_TOKEN "your-token"
 
+# Redirects for Multi-Design Setup
+# Main website: www.kandidatentekort.nl/ -> index.html
+# Meta campaign: www.kandidatentekort.nl/meta -> meta.html
+
+[[redirects]]
+  from = "/meta"
+  to = "/meta.html"
+  status = 200
+
+[[redirects]]
+  from = "/meta/"
+  to = "/meta.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
