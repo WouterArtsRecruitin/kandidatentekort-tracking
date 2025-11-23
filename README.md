@@ -112,4 +112,4 @@ In Netlify Dashboard:
 2. Add environment variable (2 min)
 3. Verify tracking (3 min)
 
-**Let's launch! 🚀**
+**Let's launch! 🚀**# KandidatenTekort.nl - Deployment 20251123-172253
