@@ -12,6 +12,7 @@
 # Redirects for Multi-Design Setup
 # Main website: www.kandidatentekort.nl/ -> index.html
 # Meta campaign: www.kandidatentekort.nl/meta -> meta.html
+# Thank you page: www.kandidatentekort.nl/bedankt -> bedankt.html
 
 [[redirects]]
   from = "/meta"
@@ -21,6 +22,16 @@
 [[redirects]]
   from = "/meta/"
   to = "/meta.html"
+  status = 200
+
+[[redirects]]
+  from = "/bedankt"
+  to = "/bedankt.html"
+  status = 200
+
+[[redirects]]
+  from = "/bedankt/"
+  to = "/bedankt.html"
   status = 200
 
 [[headers]]
