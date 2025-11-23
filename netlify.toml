@@ -9,11 +9,6 @@
 # FACEBOOK_API_TOKEN = your token here
 # Or use Netlify CLI: netlify env:set FACEBOOK_API_TOKEN "your-token"
 
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
-
 [[headers]]
   for = "/*"
   [headers.values]
