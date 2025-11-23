@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kandidatentekort? Wij hebben de oplossing! | Recruitin</title>
+    <meta name="description" content="Krijg toegang tot ons netwerk van 500+ pre-vetted tech professionals. Backend, Frontend, DevOps - binnen 48 uur de juiste match.">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6G1NY28BD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W6G1NY28BD');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1735907367288442');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1735907367288442&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --recruitin-primary: #FF6B35;
+            --recruitin-dark: #1a1a2e;
+            --recruitin-light: #f5f5f5;
+            --recruitin-accent: #0066cc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--recruitin-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--recruitin-primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--recruitin-dark) 0%, #2d2d44 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            color: var(--recruitin-primary);
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--recruitin-primary);
+        }
+
+        .stat-label {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--recruitin-light);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--recruitin-dark);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--recruitin-dark);
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: var(--recruitin-primary);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .char-counter {
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background: var(--recruitin-primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #e85a25;
+        }
+
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* Demo Templates */
+        .demos {
+            background: var(--recruitin-dark);
+            color: white;
+            padding: 60px 0;
+        }
+
+        .demos h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .demo-card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .demo-card:hover {
+            border-color: var(--recruitin-primary);
+            transform: translateY(-5px);
+        }
+
+        .demo-card h3 {
+            color: var(--recruitin-primary);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .demo-card ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .demo-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .demo-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--recruitin-primary);
+            font-weight: bold;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .error-message {
+            display: none;
+            background: #f44336;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--recruitin-dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Recruitin</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Kandidatentekort? <span class="highlight">Wij hebben de oplossing!</span></h1>
+            <p>Toegang tot 500+ pre-vetted tech professionals binnen 48 uur</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Gekwalificeerde kandidaten</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">48u</div>
+                    <div class="stat-label">Eerste matches</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Plaatsingsratio</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Tevredenheid</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Templates Section -->
+    <section class="demos">
+        <div class="container">
+            <h2>Bekijk voorbeeldprofielen</h2>
+            <div class="demo-grid">
+                <!-- Backend Developer -->
+                <div class="demo-card" data-demo="backend">
+                    <h3>Backend Developer</h3>
+                    <p><strong>Senior niveau | Direct beschikbaar</strong></p>
+                    <ul>
+                        <li>8+ jaar ervaring</li>
+                        <li>Node.js, Python, Java</li>
+                        <li>Microservices architectuur</li>
+                        <li>AWS/Azure certificering</li>
+                        <li>Team lead ervaring</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps Engineer -->
+                <div class="demo-card" data-demo="devops">
+                    <h3>DevOps Engineer</h3>
+                    <p><strong>Medior/Senior | 2 weken beschikbaar</strong></p>
+                    <ul>
+                        <li>6 jaar CI/CD ervaring</li>
+                        <li>Kubernetes expert</li>
+                        <li>Terraform & Ansible</li>
+                        <li>Security best practices</li>
+                        <li>Docker specialist</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend Developer -->
+                <div class="demo-card" data-demo="frontend">
+                    <h3>Frontend Developer</h3>
+                    <p><strong>Medior niveau | Direct beschikbaar</strong></p>
+                    <ul>
+                        <li>5 jaar React/Vue ervaring</li>
+                        <li>TypeScript specialist</li>
+                        <li>UX/UI design skills</li>
+                        <li>Performance optimization</li>
+                        <li>Toegankelijkheid (A11y)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Krijg toegang tot ons netwerk</h2>
+
+                <div class="success-message" id="successMessage">
+                    ✓ Bedankt! We nemen binnen 24 uur contact met je op.
+                </div>
+
+                <div class="error-message" id="errorMessage">
+                    Er ging iets mis. Probeer het opnieuw.
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Naam *</label>
+                        <input type="text" id="name" name="name" required placeholder="Je volledige naam">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="naam@bedrijf.nl">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefoonnummer</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+31 6 12345678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Bedrijfsnaam *</label>
+                        <input type="text" id="company" name="company" required placeholder="Je bedrijf">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Gezochte functie *</label>
+                        <select id="role" name="role" required>
+                            <option value="">Selecteer een functie</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="fullstack">Fullstack Developer</option>
+                            <option value="devops">DevOps Engineer</option>
+                            <option value="data">Data Engineer</option>
+                            <option value="mobile">Mobile Developer</option>
+                            <option value="other">Anders</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Aanvullende informatie</label>
+                        <textarea id="message" name="message" placeholder="Vertel ons meer over je vacature..." maxlength="500"></textarea>
+                        <div class="char-counter">
+                            <span id="charCount">0</span>/500 tekens
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submitBtn">Vraag toegang aan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Recruitin - Jouw partner in tech recruitment</p>
+        </div>
+    </footer>
+
+    <script>
+        // Character counter
+        const messageField = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+
+        messageField.addEventListener('input', function() {
+            charCount.textContent = this.value.length;
+        });
+
+        // Demo card click tracking
+        document.querySelectorAll('.demo-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const demoType = this.dataset.demo;
+
+                // Track in GA4
+                gtag('event', 'demo_view', {
+                    'demo_type': demoType
+                });
+
+                // Track in Facebook Pixel
+                fbq('track', 'ViewContent', {
+                    content_name: demoType + '_demo',
+                    content_category: 'demo_template'
+                });
+
+                console.log('✓ Demo view tracked:', demoType);
+            });
+        });
+
+        // Form submission
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Bezig met verzenden...';
+
+            // Hide previous messages
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                company: document.getElementById('company').value,
+                role: document.getElementById('role').value,
+                message: document.getElementById('message').value
+            };
+
+            // Get Facebook cookies for better tracking
+            const fbp = getCookie('_fbp');
+            const fbc = getCookie('_fbc');
+
+            // Track in GA4
+            gtag('event', 'generate_lead', {
+                'currency': 'EUR',
+                'value': 1000
+            });
+
+            // Track in Facebook Pixel (client-side)
+            fbq('track', 'Lead', {
+                content_name: formData.role,
+                value: 1000,
+                currency: 'EUR'
+            });
+
+            // Track via Conversions API (server-side)
+            try {
+                const response = await fetch('/.netlify/functions/track-conversion', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        event_name: 'Lead',
+                        user_data: {
+                            email: formData.email,
+                            phone: formData.phone,
+                            fbp: fbp,
+                            fbc: fbc
+                        },
+                        custom_data: {
+                            content_name: formData.role,
+                            value: 1000,
+                            currency: 'EUR'
+                        },
+                        event_source_url: window.location.href
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    console.log('✅ Server-side event tracked:', result);
+                } else {
+                    console.warn('⚠️ Server-side tracking failed:', result);
+                }
+            } catch (error) {
+                console.error('❌ Conversions API error:', error);
+            }
+
+            // Show success message
+            successMessage.style.display = 'block';
+
+            // Reset form
+            form.reset();
+            charCount.textContent = '0';
+
+            // Re-enable button
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Vraag toegang aan';
+            }, 2000);
+
+            // Log for verification
+            console.log('✅ Form submitted:', formData);
+            console.log('✅ All tracking events sent (GA4 + FB Pixel + Conversions API)');
+        });
+
+        // Helper function to get cookies
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+            return null;
+        }
+    </script>
+</body>
+</html>
