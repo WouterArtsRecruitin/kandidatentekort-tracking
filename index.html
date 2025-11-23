@@ -1147,13 +1147,13 @@ Wat bieden wij:
             const vacatureText = document.getElementById('vacatureText').value;
             console.log('📝 Vacature length:', vacatureText.length);
 
-            // Open Typeform with correct form ID format
+            // Open Typeform popup
             try {
                 if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
                     console.log('✅ Typeform SDK found, creating popup...');
 
-                    // Use form ID directly, not full URL
-                    const popup = window.tf.createPopup('01K25SKWYTKZ05DAHER9D52J94', {
+                    // Create popup with full URL and hidden field
+                    const popup = window.tf.createPopup('z1GroMCc', {
                         hidden: {
                             vacature_text: vacatureText
                         },
@@ -1162,11 +1162,14 @@ Wat bieden wij:
                         },
                         onReady: () => {
                             console.log('✅ Form ready');
+                        },
+                        onClose: () => {
+                            console.log('⚠️ Form closed');
                         }
                     });
 
                     popup.open();
-                    console.log('✅ Typeform popup opened');
+                    console.log('✅ Typeform popup.open() called');
                 } else {
                     console.warn('⚠️ Typeform SDK not available, using fallback');
                     // Fallback: open in new window with full URL
