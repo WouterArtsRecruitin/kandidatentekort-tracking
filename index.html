@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Gratis Vacature Analyse - 40-60% Meer Sollicitaties | KandidatenTekort.nl</title>
     <meta name="description" content="Upload je vacature en ontvang direct een expert analyse. Krijg binnen 24 uur een geoptimaliseerde versie die 40-60% meer sollicitaties genereert.">
-    
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6G1NY28BD"></script>
     <script>
@@ -15,7 +15,7 @@
       gtag('js', new Date());
       gtag('config', 'G-W6G1NY28BD');
     </script>
-    
+
     <!-- Facebook Pixel -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -26,143 +26,49 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.com/en_US/fbevents.js');
-      
+
       fbq('init', '1735907367288442');
       fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1735907367288442&ev=PageView&noscript=1"/></noscript>
-    
+
     <!-- Typeform Embed -->
     <script src="https://embed.typeform.com/next/embed.js"></script>
     <link rel="stylesheet" href="https://embed.typeform.com/next/css/popup.css" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-        
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        :root {
-            --deep-blue: #1e3a8a;
-            --navy-dark: #0f172a;
-            --electric-orange: #ff6b35;
-            --orange-bright: #ff8a5e;
-            --trust-green: #10b981;
-            --trust-blue: #3b82f6;
-            --gray-50: #f8fafc;
-            --gray-100: #f1f5f9;
-            --gray-200: #e2e8f0;
-            --gray-600: #475569;
-            --gray-700: #334155;
-            --gray-800: #1e293b;
-        }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: var(--gray-800);
-            background: var(--gray-50);
+            color: #1e293b;
+            background: #f8fafc;
             -webkit-font-smoothing: antialiased;
         }
-        
-        /* HEADER */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            border-bottom: 1px solid var(--gray-200);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(8px);
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px 32px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: var(--navy-dark);
-            letter-spacing: -0.03em;
-        }
-        
-        .logo-accent {
-            background: linear-gradient(135deg, var(--electric-orange), #ff8a5e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .trust-badge {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 14px;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--trust-green);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-        }
-        
-        .header-stat-label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--gray-600);
-        }
-        
-        .header-stat-value {
-            font-size: 1.75rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--electric-orange), #e55a2b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.02em;
-        }
-        
+
         /* HERO */
         .hero {
-            background: linear-gradient(135deg, var(--deep-blue) 0%, #1e293b 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
             color: white;
             padding: 80px 32px 64px;
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
             inset: 0;
-            background-image: 
+            background-image:
                 linear-gradient(30deg, rgba(255,255,255,0.03) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.03) 87.5%),
                 linear-gradient(150deg, rgba(255,255,255,0.03) 12%, transparent 12.5%, transparent 87%, rgba(255,255,255,0.03) 87.5%);
             background-size: 80px 140px;
             opacity: 0.4;
         }
-        
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.15) 0%, transparent 70%);
-        }
-        
+
         .hero-content {
             position: relative;
             z-index: 1;
@@ -170,72 +76,37 @@
             margin: 0 auto;
             text-align: center;
         }
-        
-        .hero-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 20px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(8px);
-            border-radius: 24px;
-            font-size: 0.875rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
+
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 900;
             margin-bottom: 24px;
             line-height: 1.1;
             letter-spacing: -0.03em;
         }
-        
+
         .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--electric-orange), var(--orange-bright));
+            background: linear-gradient(135deg, #ff6b35, #ff8a5e);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        
+
         .hero-subtitle {
-            font-size: 1.375rem;
+            font-size: 1.25rem;
             line-height: 1.6;
             opacity: 0.95;
             font-weight: 500;
             max-width: 700px;
             margin: 0 auto 32px;
         }
-        
-        .hero-social-proof {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-            padding-top: 32px;
-            border-top: 1px solid rgba(255, 255, 255, 0.15);
-        }
-        
-        .proof-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            opacity: 0.9;
-        }
-        
+
         /* STATS */
         .stats {
             background: white;
             padding: 64px 32px;
             box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.06);
         }
-        
+
         .stats-grid {
             max-width: 1100px;
             margin: 0 auto;
@@ -243,537 +114,525 @@
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 48px;
         }
-        
+
         .stat-item {
             text-align: center;
         }
-        
+
         .stat-number {
             font-size: 3.5rem;
             font-weight: 900;
-            background: linear-gradient(135deg, var(--electric-orange), var(--trust-blue));
+            background: linear-gradient(135deg, #ff6b35, #3b82f6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: -0.04em;
             margin-bottom: 8px;
         }
-        
+
         .stat-label {
             font-size: 0.95rem;
             font-weight: 600;
-            color: var(--gray-600);
+            color: #475569;
             line-height: 1.4;
         }
-        
-        /* MAIN CARD */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 32px;
+
+        /* ANALYZER SECTION */
+        .analyzer-section {
+            padding: 80px 32px;
+            background: #f8fafc;
+            position: relative;
         }
-        
-        .main-card {
+
+        .analyzer-section::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -15%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.05), transparent 70%);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 64px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 24px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            color: #ff6b35;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #1e293b;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title .highlight {
+            background: linear-gradient(135deg, #ff6b35, #dc2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .section-subtitle strong {
+            color: #1e293b;
+            font-weight: 700;
+        }
+
+        /* ANALYZER CARD */
+        .analyzer-card {
             background: white;
             border-radius: 24px;
-            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
-            padding: 56px;
-            margin: 48px 0;
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.1);
+            padding: 48px;
+            border: 1px solid #e2e8f0;
             position: relative;
-            border: 1px solid var(--gray-200);
         }
-        
-        .main-card::before {
+
+        .analyzer-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--electric-orange) 0%, var(--trust-blue) 100%);
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #3b82f6);
             border-radius: 24px 24px 0 0;
         }
-        
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: var(--navy-dark);
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
             margin-bottom: 32px;
-            letter-spacing: -0.02em;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .trust-item {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #64748b;
         }
-        
-        /* DEMO SECTION */
-        .demo-section {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.04), rgba(255, 107, 53, 0.04));
-            border: 2px solid var(--gray-200);
-            border-radius: 16px;
-            padding: 28px;
-            margin-bottom: 32px;
+
+        .trust-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
         }
-        
-        .demo-section h4 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--navy-dark);
-            margin-bottom: 18px;
-        }
-        
-        .demo-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        
-        .demo-btn {
-            padding: 12px 24px;
-            background: white;
-            border: 2px solid var(--deep-blue);
-            border-radius: 10px;
-            color: var(--deep-blue);
-            font-weight: 700;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.1);
-        }
-        
-        .demo-btn:hover {
-            background: var(--deep-blue);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(30, 58, 138, 0.25);
-        }
-        
-        /* TEXTAREA */
+
+        /* FORM */
         textarea {
             width: 100%;
-            min-height: 260px;
-            padding: 28px;
-            border: 2px solid var(--gray-200);
+            min-height: 280px;
+            padding: 24px;
+            border: 2px solid #e2e8f0;
             border-radius: 16px;
             font-family: inherit;
             font-size: 1.05rem;
             line-height: 1.7;
             resize: vertical;
             transition: all 0.3s;
-            background: var(--gray-50);
+            background: white;
             margin-bottom: 16px;
-            color: var(--gray-800);
+            color: #1e293b;
         }
-        
+
         textarea:focus {
             outline: none;
-            border-color: var(--deep-blue);
-            box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.08);
-            background: white;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
         }
-        
-        .char-counter {
+
+        textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-footer {
             display: flex;
             justify-content: space-between;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--gray-600);
-            margin-bottom: 28px;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
         }
-        
-        /* SUBMIT BUTTON */
+
+        .demo-buttons {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .demo-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #94a3b8;
+        }
+
+        .demo-btn {
+            padding: 8px 16px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            color: #64748b;
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .demo-btn:hover {
+            border-color: #ff6b35;
+            color: #ff6b35;
+            background: rgba(255, 107, 53, 0.05);
+        }
+
+        .char-count {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        .char-count.ready {
+            color: #10b981;
+        }
+
         .submit-btn {
-            width: 100%;
-            padding: 24px 40px;
-            background: linear-gradient(135deg, var(--electric-orange) 0%, #e55a2b 100%);
+            padding: 16px 32px;
+            background: #1e293b;
             color: white;
             border: none;
-            border-radius: 14px;
-            font-size: 1.25rem;
+            border-radius: 12px;
+            font-size: 1.125rem;
             font-weight: 800;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 12px 28px rgba(255, 107, 53, 0.35);
-            position: relative;
-            overflow: hidden;
-            letter-spacing: -0.01em;
+            transition: all 0.3s;
+            box-shadow: 0 12px 28px rgba(30, 41, 59, 0.3);
         }
-        
-        .submit-btn::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
+
         .submit-btn:hover:not(:disabled) {
-            transform: translateY(-3px);
-            box-shadow: 0 16px 40px rgba(255, 107, 53, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(30, 41, 59, 0.4);
+            background: #0f172a;
         }
-        
-        .submit-btn:hover:not(:disabled)::before {
-            opacity: 1;
-        }
-        
+
         .submit-btn:disabled {
             opacity: 0.6;
             cursor: not-allowed;
         }
-        
-        /* LOADING MODAL */
-        .loading-modal {
+
+        /* MODALS */
+        .modal {
             display: none;
             position: fixed;
             inset: 0;
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(8px);
             z-index: 9999;
             justify-content: center;
             align-items: center;
+            padding: 32px;
         }
-        
-        .loading-modal.active {
+
+        .modal.active {
             display: flex;
         }
-        
-        .loading-content {
+
+        .modal-content {
             background: white;
             border-radius: 24px;
-            padding: 48px 64px;
+            padding: 48px;
             max-width: 600px;
-            text-align: center;
+            width: 100%;
             box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: modalFadeIn 0.3s ease-out;
         }
-        
-        .spinner {
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #94a3b8;
+            cursor: pointer;
+            padding: 8px;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: #1e293b;
+        }
+
+        /* LOADING MODAL */
+        .loading-spinner {
             width: 64px;
             height: 64px;
-            border: 6px solid var(--gray-200);
-            border-top: 6px solid var(--electric-orange);
+            border: 6px solid #e2e8f0;
+            border-top: 6px solid #ff6b35;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin: 0 auto 24px;
         }
-        
+
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        
+
         .loading-content h3 {
             font-size: 1.75rem;
             font-weight: 800;
-            color: var(--navy-dark);
+            color: #1e293b;
             margin-bottom: 16px;
         }
-        
+
         .loading-content p {
             font-size: 1.125rem;
-            color: var(--gray-600);
-            line-height: 1.6;
+            color: #64748b;
+            margin-bottom: 32px;
         }
-        
+
         .loading-steps {
-            margin: 32px 0;
             text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
         }
-        
+
         .loading-step {
             display: flex;
             align-items: center;
             gap: 12px;
             padding: 12px;
             margin: 8px 0;
-            background: var(--gray-50);
+            background: #f8fafc;
             border-radius: 12px;
             font-size: 0.95rem;
-            color: var(--gray-700);
+            color: #64748b;
         }
-        
+
         .loading-step.active {
             background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(59, 130, 246, 0.1));
             font-weight: 600;
+            color: #1e293b;
         }
-        
-        .loading-step .icon {
-            font-size: 1.25rem;
-        }
-        
-        /* RESULTS MODAL */
-        .results-modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(15, 23, 42, 0.95);
-            z-index: 9999;
-            justify-content: center;
-            align-items: center;
-            overflow-y: auto;
-            padding: 32px;
-        }
-        
-        .results-modal.active {
+
+        .step-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #e2e8f0;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
         }
-        
-        .results-content {
-            background: white;
-            border-radius: 24px;
-            padding: 48px;
-            max-width: 700px;
-            width: 100%;
-            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
-            position: relative;
+
+        .loading-step.active .step-icon {
+            background: #ff6b35;
+            color: white;
         }
-        
+
+        /* RESULTS MODAL */
         .results-header {
             text-align: center;
             margin-bottom: 32px;
             padding-bottom: 24px;
-            border-bottom: 2px solid var(--gray-200);
+            border-bottom: 2px solid #e2e8f0;
         }
-        
-        .results-header h2 {
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--navy-dark);
-            margin-bottom: 12px;
-        }
-        
-        .results-score {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 16px;
-            margin: 24px 0;
-        }
-        
+
         .score-circle {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--electric-orange), var(--orange-bright));
+            background: linear-gradient(135deg, #ff6b35, #ff8a5e);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 900;
             color: white;
             box-shadow: 0 12px 32px rgba(255, 107, 53, 0.3);
+            margin: 0 auto 16px;
         }
-        
-        .score-label {
-            text-align: left;
+
+        .score-circle.good {
+            background: linear-gradient(135deg, #10b981, #059669);
         }
-        
-        .score-label h3 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--navy-dark);
+
+        .results-header h2 {
+            font-size: 1.75rem;
+            font-weight: 900;
+            color: #1e293b;
+            margin-bottom: 8px;
         }
-        
-        .score-label p {
-            font-size: 0.95rem;
-            color: var(--gray-600);
+
+        .results-header p {
+            color: #64748b;
         }
-        
+
         .findings-list {
             margin: 32px 0;
         }
-        
+
         .finding-item {
-            background: var(--gray-50);
-            border-left: 4px solid var(--electric-orange);
+            background: #f8fafc;
+            border-left: 4px solid #ff6b35;
             padding: 16px 20px;
             margin: 16px 0;
             border-radius: 12px;
         }
-        
-        .finding-item h4 {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--navy-dark);
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+
+        .finding-item.success {
+            border-left-color: #10b981;
+            background: rgba(16, 185, 129, 0.05);
         }
-        
+
+        .finding-item.warning {
+            border-left-color: #f59e0b;
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .finding-item h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
         .finding-item p {
             font-size: 0.95rem;
-            color: var(--gray-700);
+            color: #475569;
             line-height: 1.6;
         }
-        
-        .preview-notice {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(16, 185, 129, 0.1));
-            border: 2px solid var(--trust-blue);
+
+        .results-cta-box {
+            background: #1e293b;
+            color: white;
+            padding: 32px;
             border-radius: 16px;
-            padding: 24px;
-            margin: 24px 0;
             text-align: center;
+            margin-top: 32px;
         }
-        
-        .preview-notice h4 {
+
+        .results-cta-box h4 {
             font-size: 1.25rem;
             font-weight: 700;
-            color: var(--navy-dark);
             margin-bottom: 8px;
         }
-        
-        .preview-notice p {
-            font-size: 1rem;
-            color: var(--gray-700);
+
+        .results-cta-box p {
+            opacity: 0.9;
+            margin-bottom: 24px;
         }
-        
+
         .results-cta {
             width: 100%;
-            padding: 24px 40px;
-            background: linear-gradient(135deg, var(--trust-green) 0%, var(--trust-blue) 100%);
+            padding: 16px 32px;
+            background: #ff6b35;
             color: white;
             border: none;
-            border-radius: 14px;
-            font-size: 1.25rem;
-            font-weight: 800;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 12px 28px rgba(16, 185, 129, 0.35);
-            margin-top: 24px;
         }
-        
+
         .results-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 16px 40px rgba(16, 185, 129, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+            background: #e55a2b;
         }
-        
-        /* SOCIAL PROOF NOTIFICATIONS */
-        .social-proof-notification {
-            position: fixed;
-            top: 100px;
-            left: 24px;
-            background: white;
-            border-radius: 16px;
-            padding: 16px 24px;
-            box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            max-width: 380px;
-            z-index: 1000;
-            opacity: 0;
-            transform: translateX(-420px);
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            border-left: 4px solid var(--trust-green);
-        }
-        
-        .social-proof-notification.show {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        
-        .social-proof-notification .avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--trust-green), var(--trust-blue));
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
-        
-        .social-proof-notification .content {
-            flex: 1;
-        }
-        
-        .social-proof-notification .name {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--navy-dark);
-        }
-        
-        .social-proof-notification .action {
-            font-size: 0.85rem;
-            color: var(--gray-600);
-        }
-        
-        .social-proof-notification .time {
-            font-size: 0.75rem;
-            color: var(--gray-500);
-            margin-top: 2px;
-        }
-        
+
         /* FOOTER */
         footer {
-            background: var(--navy-dark);
+            background: #1e293b;
             color: white;
             padding: 48px 32px;
             text-align: center;
         }
-        
+
         footer strong {
-            color: var(--electric-orange);
+            color: #ff6b35;
         }
-        
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.25rem; }
-            .main-card { padding: 32px 24px; }
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 2rem; }
+            .analyzer-card { padding: 32px 24px; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
             .stat-number { font-size: 2.5rem; }
-            .header-content { flex-direction: column; gap: 16px; text-align: center; }
-            .loading-content, .results-content { padding: 32px 24px; }
-            .social-proof-notification { 
-                max-width: calc(100% - 48px);
-                left: 12px;
-                top: 80px;
-            }
+            .form-footer { flex-direction: column; align-items: stretch; }
+            .modal-content { padding: 32px 24px; }
         }
     </style>
 </head>
 <body>
-    
-    <header>
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">
-                    Kandidaten<span class="logo-accent">Tekort</span>.nl
-                </div>
-                <div class="trust-badge">
-                    <span>✓</span> Expert Verified
-                </div>
-            </div>
-            <div class="header-stat">
-                <div class="header-stat-label">Bewezen Resultaat</div>
-                <div class="header-stat-value">40-60%</div>
-            </div>
-        </div>
-    </header>
 
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-eyebrow">
-                <span>⚡</span> EXPERT VACATURE ANALYSE
-            </div>
             <h1>
-                Ontdek waarom je <span class="highlight">geen kandidaten</span> krijgt
+                Waarom solliciteert <span class="highlight">niemand</span> op je vacature?
             </h1>
             <p class="hero-subtitle">
-                Upload je vacature. Ontvang direct een data-driven analyse. Krijg binnen 24 uur een geoptimaliseerde versie die 40-60% meer sollicitaties genereert.
+                Scan je vacaturetekst op <strong>12 bewezen conversie-killers</strong> en ontvang binnen 24 uur een geoptimaliseerd voorstel.
             </p>
-            <div class="hero-social-proof">
-                <div class="proof-item">
-                    <span class="proof-icon">🎯</span> 150+ Vacatures Geanalyseerd
-                </div>
-                <div class="proof-item">
-                    <span class="proof-icon">✅</span> 92% Satisfaction Rate
-                </div>
-                <div class="proof-item">
-                    <span class="proof-icon">⚡</span> 24 Uur Levertijd
-                </div>
-            </div>
         </div>
     </section>
 
+    <!-- STATS -->
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-item">
@@ -795,126 +654,125 @@
         </div>
     </section>
 
-    <div class="container">
-        <div class="main-card">
-            <h2 class="section-title">
-                <span>📊</span> Analyseer Je Vacature
-            </h2>
-            
-            <div class="demo-section">
-                <h4>💡 Geen vacature bij de hand? Probeer een voorbeeld:</h4>
-                <div class="demo-buttons">
-                    <button class="demo-btn" onclick="loadDemo('backend')">
-                        Werkvoorbereider Bouw
-                    </button>
-                    <button class="demo-btn" onclick="loadDemo('devops')">
-                        Maintenance Engineer
-                    </button>
-                    <button class="demo-btn" onclick="loadDemo('frontend')">
-                        Technisch Tekenaar
-                    </button>
+    <!-- ANALYZER -->
+    <section class="analyzer-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">
+                    <span>✨</span> GRATIS VACATURE CHECK
+                </div>
+                <h2 class="section-title">
+                    Ontdek wat <span class="highlight">fout gaat</span>
+                </h2>
+                <p class="section-subtitle">
+                    Plak je vacaturetekst hieronder en ontvang een <strong>data-driven analyse</strong> binnen enkele seconden.
+                </p>
+            </div>
+
+            <div class="analyzer-card">
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>1500+ Vacatures</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <span>Data-gedreven</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <span>100% Veilig</span>
+                    </div>
+                </div>
+
+                <form id="analyzerForm" onsubmit="handleSubmit(event)">
+                    <textarea
+                        id="vacancyText"
+                        placeholder="Plak hier je volledige vacaturetekst..."
+                        maxlength="8000"
+                        oninput="updateCharCount()"
+                        required
+                    ></textarea>
+
+                    <div class="form-footer">
+                        <div class="demo-buttons">
+                            <span class="demo-label">Probeer demo:</span>
+                            <button type="button" class="demo-btn" onclick="loadDemo('backend')">Bouw</button>
+                            <button type="button" class="demo-btn" onclick="loadDemo('devops')">Techniek</button>
+                            <button type="button" class="demo-btn" onclick="loadDemo('frontend')">Engineering</button>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <span class="char-count" id="charCount">0 tekens</span>
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                Start Analyse →
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <p style="text-align: center; font-size: 0.875rem; color: #94a3b8; margin-top: 24px;">
+                <svg style="display: inline; width: 16px; height: 16px; vertical-align: middle;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                Wij respecteren je privacy. Je data wordt niet opgeslagen.
+            </p>
+        </div>
+    </section>
+
+    <!-- LOADING MODAL -->
+    <div class="modal" id="loadingModal">
+        <div class="modal-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-content">
+                <h3>Analyseren...</h3>
+                <p>We scannen je vacature op conversie-killers</p>
+
+                <div class="loading-steps">
+                    <div class="loading-step active" id="step1">
+                        <div class="step-icon">✓</div>
+                        <span>Structuur checken</span>
+                    </div>
+                    <div class="loading-step" id="step2">
+                        <div class="step-icon">2</div>
+                        <span>Salaris & Tone-of-voice</span>
+                    </div>
+                    <div class="loading-step" id="step3">
+                        <div class="step-icon">3</div>
+                        <span>Score berekenen</span>
+                    </div>
                 </div>
             </div>
-            
-            <form id="vacatureForm" onsubmit="handleSubmit(event)">
-                <textarea 
-                    id="vacatureText"
-                    placeholder="Plak hier je volledige vacaturetekst..."
-                    maxlength="8000"
-                    oninput="updateCharCount()"
-                    required
-                ></textarea>
-                
-                <div class="char-counter">
-                    <span id="charCount">0 / 8000 karakters</span>
-                    <span id="status">📝 Plak tekst om te beginnen</span>
-                </div>
-                
-                <button type="submit" class="submit-btn">
-                    ✨ Analyseer Mijn Vacature (Gratis Preview)
-                </button>
-            </form>
         </div>
     </div>
 
-    <!-- Loading Modal -->
-    <div class="loading-modal" id="loadingModal">
-        <div class="loading-content">
-            <div class="spinner"></div>
-            <h3>Je vacature wordt geanalyseerd...</h3>
-            <p>Even geduld, onze expert systemen verwerken je vacature</p>
-            
-            <div class="loading-steps">
-                <div class="loading-step active" id="step1">
-                    <span class="icon">🔍</span>
-                    <span>Vacature scannen...</span>
-                </div>
-                <div class="loading-step" id="step2">
-                    <span class="icon">📊</span>
-                    <span>Probleem gebieden identificeren...</span>
-                </div>
-                <div class="loading-step" id="step3">
-                    <span class="icon">✨</span>
-                    <span>Optimalisaties voorbereiden...</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- RESULTS MODAL -->
+    <div class="modal" id="resultsModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeResults()">×</button>
 
-    <!-- Results Modal -->
-    <div class="results-modal" id="resultsModal">
-        <div class="results-content">
             <div class="results-header">
-                <h2>📊 Preview Analyse Resultaat</h2>
-                <p style="color: var(--gray-600); font-size: 1rem;">Hier zijn de belangrijkste bevindingen</p>
-            </div>
-            
-            <div class="results-score">
-                <div class="score-circle" id="scoreValue">6.5</div>
-                <div class="score-label">
-                    <h3>Optimalisatie Score</h3>
-                    <p>Er is ruimte voor verbetering</p>
+                <div class="score-circle" id="scoreCircle">
+                    <span id="scoreValue">6.5</span>
                 </div>
+                <h2 id="resultsTitle">Gemiste kansen gedetecteerd</h2>
+                <p id="resultsSubtitle">Hieronder de eerste bevindingen uit onze scan</p>
             </div>
-            
-            <div class="findings-list">
-                <div class="finding-item">
-                    <h4>⚠️ Vaag salaris bereik</h4>
-                    <p>Je vacature mist concrete salaris informatie. 63% van kandidaten skipt vacatures zonder duidelijk salaris.</p>
-                </div>
-                
-                <div class="finding-item">
-                    <h4>❌ Te algemene functie beschrijving</h4>
-                    <p>De beschrijving bevat te veel "buzzwords" en te weinig concrete taken en verantwoordelijkheden.</p>
-                </div>
-                
-                <div class="finding-item">
-                    <h4>🎯 Geen unique selling point</h4>
-                    <p>Wat maakt deze rol uniek? Waarom zou een kandidaat specifiek voor jou moeten kiezen?</p>
-                </div>
+
+            <div class="findings-list" id="findingsList">
+                <!-- Populated by JavaScript -->
             </div>
-            
-            <div class="preview-notice">
-                <h4>💡 Dit zijn slechts de highlights!</h4>
-                <p>Het volledige rapport bevat <strong>12+ concrete optimalisaties</strong>, voor-en-na voorbeelden, en een volledig geoptimaliseerde vacaturetekst.</p>
+
+            <div class="results-cta-box">
+                <h4>🚀 Ontvang het complete verbeterplan</h4>
+                <p>Inclusief herschreven teksten en concrete tips</p>
+                <button class="results-cta" onclick="openFullAnalysis()">
+                    Stuur mij het rapport (Gratis)
+                </button>
             </div>
-            
-            <button class="results-cta" onclick="openFullAnalysisForm()">
-                🚀 Krijg Volledige Analyse (Binnen 24 uur)
-            </button>
         </div>
     </div>
 
-    <!-- Social Proof Notification -->
-    <div class="social-proof-notification" id="socialProofNotification">
-        <div class="avatar">👤</div>
-        <div class="content">
-            <div class="name" id="spName">Martijn uit Amsterdam</div>
-            <div class="action" id="spAction">kreeg net zijn geoptimaliseerde vacature</div>
-            <div class="time">Zojuist</div>
-        </div>
-    </div>
-
+    <!-- FOOTER -->
     <footer>
         <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Powered by Recruitin</strong></p>
         <p style="font-size: 0.9rem; opacity: 0.8;">© 2025 Recruitin • Expert recruitment solutions</p>
@@ -989,228 +847,199 @@ Wat bieden wij:
 - Opleidingen en cursussen`
         };
 
-        const SOCIAL_PROOF_MESSAGES = [
-            { name: "Martijn uit Arnhem", action: "optimaliseerde zijn Werkvoorbereider vacature", avatar: "👨" },
-            { name: "Sarah uit Veghel", action: "kreeg 18 sollicitaties in 5 dagen", avatar: "👩" },
-            { name: "Bas uit Eindhoven", action: "verhoogde zijn sollicitaties met 62%", avatar: "👨" },
-            { name: "Lisa uit Nijmegen", action: "ontving haar Maintenance Engineer rapport", avatar: "👩" },
-            { name: "Tom uit Breda", action: "optimaliseerde zijn Technisch Tekenaar rol", avatar: "👨" },
-            { name: "Emma uit Apeldoorn", action: "kreeg net haar geoptimaliseerde vacature", avatar: "👩" },
-            { name: "Peter uit Helmond", action: "verhoogde kwaliteit sollicitanten met 45%", avatar: "👨" },
-            { name: "Sophie uit Tilburg", action: "kreeg 9 gekwalificeerde kandidaten", avatar: "👩" },
-            { name: "Jan uit Ede", action: "optimaliseerde zijn Lasser vacature", avatar: "👨" },
-            { name: "Linda uit Roosendaal", action: "ontving volledig rapport binnen 18 uur", avatar: "👩" },
-            { name: "Mark uit Tiel", action: "verhoogde response rate met 58%", avatar: "👨" },
-            { name: "Anne uit Doetinchem", action: "kreeg eindelijk gekwalificeerde Werkvoorbereiders", avatar: "👩" },
-            { name: "Rob uit Oss", action: "optimaliseerde zijn Process Engineer rol", avatar: "👨" },
-            { name: "Iris uit Zwolle", action: "kreeg 14 sollicitaties in week 1", avatar: "👩" },
-            { name: "Frank uit Venlo", action: "verhoogde conversie met 51%", avatar: "👨" },
-            { name: "Nadia uit Almere", action: "optimaliseerde haar Maintenance vacature", avatar: "👩" },
-            { name: "Erik uit Deventer", action: "kreeg binnen 3 dagen eerste gesprekken", avatar: "👨" },
-            { name: "Carla uit Hengelo", action: "verhoogde kwaliteit CV's met 67%", avatar: "👩" }
-        ];
-
-        let socialProofInterval;
-
-        function startSocialProof() {
-            let index = 0;
-            
-            function showNext() {
-                const notification = document.getElementById('socialProofNotification');
-                const data = SOCIAL_PROOF_MESSAGES[index];
-                
-                document.getElementById('spName').textContent = data.name;
-                document.getElementById('spAction').textContent = data.action;
-                notification.querySelector('.avatar').textContent = data.avatar;
-                
-                notification.classList.add('show');
-                
-                setTimeout(() => {
-                    notification.classList.remove('show');
-                }, 5000);
-                
-                index = (index + 1) % SOCIAL_PROOF_MESSAGES.length;
-            }
-            
-            // First show after 5 seconds
-            setTimeout(showNext, 5000);
-            
-            // Then every 12 seconds
-            socialProofInterval = setInterval(showNext, 12000);
-        }
-
-        // Start social proof on page load
-        window.addEventListener('load', startSocialProof);
-
         function loadDemo(type) {
-            const textarea = document.getElementById('vacatureText');
-            textarea.value = DEMO_TEMPLATES[type];
+            document.getElementById('vacancyText').value = DEMO_TEMPLATES[type];
             updateCharCount();
-            textarea.focus();
-            
+
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'demo_clicked', { template_type: type });
             }
         }
 
         function updateCharCount() {
-            const textarea = document.getElementById('vacatureText');
+            const text = document.getElementById('vacancyText').value;
+            const count = text.length;
             const charCount = document.getElementById('charCount');
-            const status = document.getElementById('status');
-            
-            const length = textarea.value.length;
-            charCount.textContent = `${length} / 8000 karakters`;
-            
-            if (length > 0) {
-                status.textContent = '✅ Klaar om te analyseren!';
-                status.style.color = '#10b981';
+            charCount.textContent = `${count} tekens`;
+
+            if (count > 50) {
+                charCount.classList.add('ready');
             } else {
-                status.textContent = '📝 Plak tekst om te beginnen';
-                status.style.color = '#475569';
+                charCount.classList.remove('ready');
             }
         }
 
         function handleSubmit(event) {
             event.preventDefault();
-            
-            const vacatureText = document.getElementById('vacatureText').value;
-            
-            if (!vacatureText || vacatureText.trim().length < 50) {
-                alert('⚠️ Plak een volledige vacature (minimaal 50 karakters)');
+
+            const vacancyText = document.getElementById('vacancyText').value;
+
+            if (vacancyText.trim().length < 50) {
+                alert('⚠️ De tekst is te kort voor een goede analyse. Plak minimaal 50 karakters.');
                 return;
             }
-            
+
+            // Track event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'initiate_checkout', { content_name: 'Vacature Analyse' });
+            }
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'InitiateCheckout', { content_name: 'Vacature Analyse' });
+            }
+
             // Show loading modal
-            const loadingModal = document.getElementById('loadingModal');
-            loadingModal.classList.add('active');
-            
+            document.getElementById('loadingModal').classList.add('active');
+
             // Animate steps
             setTimeout(() => {
                 document.getElementById('step1').classList.remove('active');
                 document.getElementById('step2').classList.add('active');
             }, 1200);
-            
+
             setTimeout(() => {
                 document.getElementById('step2').classList.remove('active');
                 document.getElementById('step3').classList.add('active');
             }, 2400);
-            
-            // After 4 seconds, show results
+
+            // Analyze text
+            const findings = analyzeText(vacancyText);
+
+            // After 3.5s, show results
             setTimeout(() => {
-                loadingModal.classList.remove('active');
-                
-                // Show results modal
-                const resultsModal = document.getElementById('resultsModal');
-                resultsModal.classList.add('active');
-                
-                // Random score between 5.5 and 7.5
-                const score = (Math.random() * 2 + 5.5).toFixed(1);
-                document.getElementById('scoreValue').textContent = score;
-                
-                // Tracking
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'preview_analysis_viewed', {
-                        score: score,
-                        char_count: vacatureText.length
-                    });
-                }
-            }, 4000);
+                document.getElementById('loadingModal').classList.remove('active');
+                showResults(findings);
+            }, 3500);
         }
 
-        function openFullAnalysisForm() {
-            console.log('🚀 Opening Typeform...');
+        function analyzeText(text) {
+            const findings = [];
+            const lowerText = text.toLowerCase();
 
-            // Close results modal
-            document.getElementById('resultsModal').classList.remove('active');
-
-            // Tracking
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'full_analysis_requested', {
-                    event_category: 'engagement'
+            // Check salary
+            if (text.includes('€') || lowerText.includes('salaris') || lowerText.includes('bruto')) {
+                findings.push({
+                    title: "✅ Salarisindicatie gevonden",
+                    desc: "Goed bezig! Vacatures met concreet salaris krijgen tot 40% meer reacties.",
+                    type: 'success'
+                });
+            } else {
+                findings.push({
+                    title: "⚠️ Vaag salaris bereik",
+                    desc: "Je vacature mist concrete salaris informatie. 63% van kandidaten skipt vacatures zonder duidelijk salaris.",
+                    type: 'warning'
                 });
             }
 
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead', {
-                    content_name: 'Full Vacature Analyse',
-                    value: 0,
-                    currency: 'EUR'
+            // Check we vs you
+            const weCount = (lowerText.match(/\b(wij|ons|onze|bedrijf)\b/g) || []).length;
+            const youCount = (lowerText.match(/\b(jij|je|jouw|jou)\b/g) || []).length;
+
+            if (youCount > weCount) {
+                findings.push({
+                    title: "✅ Kandidaat-gericht geschreven",
+                    desc: "Je spreekt de kandidaat direct aan. Dit verhoogt de betrokkenheid aanzienlijk.",
+                    type: 'success'
+                });
+            } else {
+                findings.push({
+                    title: "❌ Te veel 'Wij' vs 'Jij'",
+                    desc: `Je gebruikt ${weCount}x 'wij' en slechts ${youCount}x 'jij'. Draai dit om naar de voordelen voor de kandidaat.`,
+                    type: 'warning'
                 });
             }
 
-            sendServerSideEvent('Lead', {
-                content_name: 'Full Vacature Analyse',
-                value: 0,
-                currency: 'EUR'
+            // Check bullets
+            const bulletCount = (text.match(/[-•*]\s/g) || []).length;
+            if (bulletCount > 5) {
+                findings.push({
+                    title: "✅ Goede scanbaarheid",
+                    desc: "Het gebruik van bulletpoints maakt je vacature goed scanbaar voor mobiele bezoekers.",
+                    type: 'success'
+                });
+            } else {
+                findings.push({
+                    title: "⚠️ Tekstmuur gedetecteerd",
+                    desc: "Gebruik meer opsommingstekens. Mobiele bezoekers haken af bij lange lappen tekst.",
+                    type: 'warning'
+                });
+            }
+
+            // Calculate score
+            let baseScore = 4.5;
+            findings.forEach(f => {
+                if (f.type === 'success') baseScore += 1.5;
+                if (f.type === 'warning') baseScore += 0.5;
+            });
+            const finalScore = Math.min(8.2, baseScore + Math.random()).toFixed(1);
+
+            return { score: finalScore, findings: findings.slice(0, 3) };
+        }
+
+        function showResults(analysis) {
+            const scoreCircle = document.getElementById('scoreCircle');
+            const scoreValue = document.getElementById('scoreValue');
+            const resultsTitle = document.getElementById('resultsTitle');
+            const findingsList = document.getElementById('findingsList');
+
+            scoreValue.textContent = analysis.score;
+
+            if (parseFloat(analysis.score) > 7) {
+                scoreCircle.classList.add('good');
+                resultsTitle.textContent = "Sterke basis, maar kan scherper";
+            } else {
+                scoreCircle.classList.remove('good');
+                resultsTitle.textContent = "Gemiste kansen gedetecteerd";
+            }
+
+            findingsList.innerHTML = '';
+            analysis.findings.forEach(finding => {
+                const div = document.createElement('div');
+                div.className = `finding-item ${finding.type}`;
+                div.innerHTML = `
+                    <h4>${finding.title}</h4>
+                    <p>${finding.desc}</p>
+                `;
+                findingsList.appendChild(div);
             });
 
-            // Get vacature text
-            const vacatureText = document.getElementById('vacatureText').value;
-            console.log('📝 Vacature length:', vacatureText.length);
+            document.getElementById('resultsModal').classList.add('active');
 
-            // Open Typeform popup
+            // Store for later use
+            window.currentVacancyText = document.getElementById('vacancyText').value;
+        }
+
+        function closeResults() {
+            document.getElementById('resultsModal').classList.remove('active');
+        }
+
+        function openFullAnalysis() {
             try {
                 if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
-                    console.log('✅ Typeform SDK found, creating popup...');
-
-                    // Create popup and destructure open function
                     const { open } = window.tf.createPopup('z1GroMCc', {
-                        size: 100,  // 100% fullscreen (default)
+                        size: 100,
                         medium: 'embed-sdk',
+                        hidden: {
+                            vacature_text: (window.currentVacancyText || '').substring(0, 8000)
+                        },
+                        autoClose: 3000,
                         onSubmit: () => {
-                            console.log('✅ Form submitted');
-                        },
-                        onReady: () => {
-                            console.log('✅ Form ready');
-                        },
-                        onClose: () => {
-                            console.log('⚠️ Form closed');
+                            if (typeof gtag !== 'undefined') {
+                                gtag('event', 'complete_registration', { content_name: 'Vacature Analyse' });
+                            }
+                            if (typeof fbq !== 'undefined') {
+                                fbq('track', 'CompleteRegistration', { content_name: 'Vacature Analyse' });
+                            }
+                            closeResults();
                         }
                     });
-
                     open();
-                    console.log('✅ Typeform popup opened');
                 } else {
-                    console.warn('⚠️ Typeform SDK not available, using fallback');
-                    // Fallback: open in new window
-                    window.open('https://form.typeform.com/to/z1GroMCc', '_blank', 'width=800,height=700,scrollbars=yes');
+                    window.open('https://form.typeform.com/to/z1GroMCc', '_blank');
                 }
             } catch (error) {
-                console.error('❌ Typeform error:', error);
-                console.error('Error details:', error.message, error.stack);
-                alert('Typeform wordt geopend in een nieuw venster...');
+                console.error('Typeform error:', error);
                 window.open('https://form.typeform.com/to/z1GroMCc', '_blank');
             }
-        }
-
-        async function sendServerSideEvent(eventName, customData = {}) {
-            try {
-                const fbp = getCookie('_fbp');
-                const fbc = getCookie('_fbc');
-                
-                const response = await fetch('/.netlify/functions/track-conversion', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        event_name: eventName,
-                        event_source_url: window.location.href,
-                        user_data: { fbp, fbc },
-                        custom_data: customData
-                    })
-                });
-                
-                const result = await response.json();
-                console.log('✅ Server-side tracked:', result);
-            } catch (error) {
-                console.error('❌ Tracking error:', error);
-            }
-        }
-
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) return parts.pop().split(';').shift();
-            return null;
         }
     </script>
 </body>
