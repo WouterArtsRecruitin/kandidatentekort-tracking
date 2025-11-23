@@ -1147,13 +1147,14 @@ Wat bieden wij:
             const vacatureText = document.getElementById('vacatureText').value;
             console.log('📝 Vacature length:', vacatureText.length);
 
-            // Open Typeform popup
+            // Open Typeform popup - force fullscreen centered
             try {
                 if (typeof window.tf !== 'undefined' && window.tf.createPopup) {
                     console.log('✅ Typeform SDK found, creating popup...');
 
-                    // Use form slug (z1GroMCc) - full form ID gives 401 error
+                    // Create fullscreen centered popup
                     const popup = window.tf.createPopup('z1GroMCc', {
+                        size: 80,  // 80% of screen
                         onSubmit: () => {
                             console.log('✅ Form submitted');
                         },
