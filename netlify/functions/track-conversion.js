@@ -4,8 +4,8 @@
 const crypto = require('crypto');
 
 // Facebook credentials (from environment variables)
-const FB_PIXEL_ID = '1735907367288442'; // Your Facebook App ID
-const FB_ACCESS_TOKEN = process.env.FACEBOOK_API_TOKEN;
+const FB_PIXEL_ID = '238226887541404'; // Correct Facebook Pixel ID
+const FB_ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
 const FB_API_VERSION = 'v18.0';
 
 exports.handler = async (event, context) => {

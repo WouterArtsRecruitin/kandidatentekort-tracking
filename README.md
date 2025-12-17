@@ -10,7 +10,7 @@
 
 - ✅ Complete HTML website (single page)
 - ✅ Google Analytics 4 (`G-W6G1NY28BD`) - CONFIGURED
-- ✅ Facebook Pixel (`1735907367288442`) - CONFIGURED
+- ✅ Facebook Pixel (`238226887541404`) - CONFIGURED
 - ✅ Facebook Conversions API (server-side tracking!)
 - ✅ Netlify Functions (serverless backend)
 - ✅ Event tracking (form submits, demo clicks)
@@ -73,7 +73,7 @@ In Netlify Dashboard:
 
 **CLIENT-SIDE (Browser):**
 - Google Analytics 4: `G-W6G1NY28BD`
-- Facebook Pixel: `1735907367288442`
+- Facebook Pixel: `238226887541404`
 - ~70% event accuracy (ad blockers affect this)
 
 **SERVER-SIDE (Conversions API):**
