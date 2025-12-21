@@ -46,7 +46,7 @@ In Netlify Dashboard:
 2. Add variable:
    ```
    Key: FACEBOOK_API_TOKEN
-   Value: EAASX9Iy8fL8BPcO9OuxKqgMZBC3hdDiZBJxwNRXxfpzytmGTHCpGRmmn1kAZCHZBxtZCLPO4UoWA4jCKhtjq5Kvezz7XZAXK8GewTKbqoQxrShDtodXX3HJjytlNMvcxoHFRAh4ZBvhYiYHAa4Ul2Hq1jWh5zF9fUUsfepvIM1fHkOWnYd6HlfZB5SZAxOwgMcYmRNgZDZD
+   Value: [YOUR_FACEBOOK_API_TOKEN_HERE]
    ```
 3. Trigger redeploy
 
