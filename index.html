@@ -319,18 +319,6 @@
             .hero-proof { gap: 24px; }
         }
     </style>
-
-    <!-- LinkedIn Insight Tag -->
-    <script>
-    _linkedin_partner_id="508490978";
-    window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];
-    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    (function(l){if(!l){window.lintrk=function(a,b){window.lintrk.q.push([a,b])};
-    window.lintrk.q=[]}var s=document.getElementsByTagName("script")[0];
-    var b=document.createElement("script");b.type="text/javascript";b.async=true;
-    b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";
-    s.parentNode.insertBefore(b,s);})(window.lintrk);
-    </script>
 </head>
 <body>
     
@@ -365,33 +353,6 @@
                 <br><strong>Claim je gratis analyse →</strong> (24 uur resultaat)
             </p>
         </div>
-    </section>
-
-    <!-- Rating widget -->
-    <section style="padding:48px 20px;background:#f8fafc;border-bottom:1px solid #e2e8f0">
-      <div id="rating-widget" style="max-width:500px;margin:0 auto;padding:32px;background:rgba(5,150,105,0.08);border:1px solid rgba(16,185,129,0.15);border-radius:12px;text-align:center">
-        <div style="font-size:24px;margin-bottom:12px" id="rating-stars">★★★★☆</div>
-        <div style="font-size:16px;font-weight:600;color:#0a1628;margin-bottom:4px" id="rating-text">Laden...</div>
-        <div style="font-size:13px;color:#64748b;margin-bottom:8px" id="rating-count">Bezig met laden...</div>
-        <p style="font-size:11px;color:#94a3b8;margin:0">Gebaseerd op directe feedback van gebruikers na rapport ontvangst</p>
-      </div>
-      <script>
-        (function() {
-          fetch('https://kandidatentekort-automation.onrender.com/api/rating-stats')
-            .then(r => r.json())
-            .then(data => {
-              if (data.error) return;
-              const avg = data.average || 0;
-              const total = data.total || 0;
-              const fullStars = Math.round(avg);
-              const stars = '★'.repeat(Math.min(fullStars, 5)) + '☆'.repeat(Math.max(0, 5 - fullStars));
-              document.getElementById('rating-stars').textContent = stars;
-              document.getElementById('rating-text').textContent = avg > 0 ? avg.toFixed(1) + '/5 sterren' : 'Nog geen reviews';
-              document.getElementById('rating-count').textContent = total > 0 ? `van ${total} beoordelingen` : 'Eerste reviews volgen';
-            })
-            .catch(err => console.warn('Rating widget fetch failed:', err));
-        })();
-      </script>
     </section>
 
     <section class="form-section">
@@ -548,4 +509,4 @@
     })();
     </script>
 </body>
-</html><!-- Redeploy trigger 1777240403 -->
+</html>
