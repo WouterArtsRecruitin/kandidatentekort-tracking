@@ -1,512 +1,260 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Gratis Vacature Analyse - 40-60% Meer Sollicitaties | KandidatenTekort.nl</title>
-    <meta name="description" content="Ontdek waarom je geen kandidaten krijgt. Expert analyse geeft binnen 24 uur concrete verbeterpunten.">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6G1NY28BD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-W6G1NY28BD');
-    </script>
-    
-    <!-- Facebook Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '238226887541404');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=238226887541404&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
-            background: #f8fafc;
-            -webkit-font-smoothing: antialiased;
-        }
-        
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.98);
-            border-bottom: 1px solid #e2e8f0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 1px 3px rgba(10, 22, 40, 0.08);
-        }
-        
-        .header-content {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 18px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 900;
-            color: #0a1628;
-            letter-spacing: -0.04em;
-        }
-        
-        .logo-accent {
-            background: linear-gradient(135deg, #ea580c, #fb923c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .trust-badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            background: linear-gradient(135deg, rgba(5, 150, 105, 0.08), rgba(16, 185, 129, 0.08));
-            border-radius: 24px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #059669;
-            border: 1.5px solid #10b981;
-        }
-        
-        .header-cta {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        
-        .header-label {
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #64748b;
-            margin-bottom: 4px;
-        }
-        
-        .header-value {
-            font-size: 2rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #ea580c, #fb923c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.03em;
-            line-height: 1;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(160deg, #0a1628 0%, #1e293b 100%);
-            color: white;
-            padding: 100px 40px 80px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: 
-                repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, transparent 1px, transparent 40px),
-                repeating-linear-gradient(90deg, rgba(255,255,255,0.03) 0px, transparent 1px, transparent 40px);
-            opacity: 0.5;
-        }
-        
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            right: -10%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(234, 88, 12, 0.15) 0%, transparent 60%);
-            pointer-events: none;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 24px;
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(12px);
-            border-radius: 30px;
-            font-size: 0.85rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 32px;
-            border: 1.5px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-        }
-        
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 900;
-            margin-bottom: 32px;
-            line-height: 1.05;
-            letter-spacing: -0.04em;
-        }
-        
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, #f97316, #fb923c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: block;
-            margin-top: 8px;
-        }
-        
-        .hero-subtitle {
-            font-size: 1.5rem;
-            line-height: 1.6;
-            opacity: 0.92;
-            font-weight: 500;
-            max-width: 780px;
-            margin: 0 auto 48px;
-            color: rgba(255, 255, 255, 0.95);
-        }
-        
-        .hero-proof {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 48px;
-            flex-wrap: wrap;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.12);
-        }
-        
-        .proof-stat {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .proof-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #fb923c, #fbbf24);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.03em;
-        }
-        
-        .proof-label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            opacity: 0.85;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-        
-        /* Form Section */
-        .form-section {
-            padding: 80px 40px;
-            background: #f1f5f9;
-        }
-        
-        .form-container {
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .form-card {
-            background: white;
-            border-radius: 24px;
-            padding: 48px 40px;
-            box-shadow: 0 8px 40px rgba(10, 22, 40, 0.12);
-        }
-        
-        .form-title {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #0a1628;
-            margin-bottom: 12px;
-            text-align: center;
-        }
-        
-        .form-subtitle {
-            color: #64748b;
-            font-size: 1.05rem;
-            margin-bottom: 32px;
-            line-height: 1.6;
-            text-align: center;
-        }
-        
-        /* Footer */
-        footer {
-            background: #0a1628;
-            color: white;
-            padding: 56px 40px;
-            text-align: center;
-        }
-        
-        .footer-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .footer-brand {
-            font-size: 1.3rem;
-            font-weight: 800;
-            margin-bottom: 12px;
-        }
-        
-        .footer-brand-accent {
-            color: #fb923c;
-        }
-        
-        .footer-tagline {
-            font-size: 0.95rem;
-            opacity: 0.75;
-            margin-bottom: 24px;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .hero-subtitle { font-size: 1.15rem; }
-            .form-card { padding: 36px 28px; }
-            .header-content { 
-                flex-direction: column; 
-                gap: 20px;
-                padding: 18px 20px;
-            }
-            .header-cta { align-items: center; }
-            .hero { padding: 60px 20px 40px; }
-            .hero-proof { gap: 24px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KandidatenTekort.nl | Gratis Vacature Analyse</title>
+<meta name="description" content="Ontdek waarom je geen kandidaten krijgt. Expert analyse geeft binnen 24 uur concrete verbeterpunten.">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKNTCG74ME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LKNTCG74ME');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '238226887541404'); fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=238226887541404&ev=PageView&noscript=1" /></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07050f;
+  --bg2:#0e0a1a;
+  --surface:rgba(255,255,255,0.05);
+  --border:rgba(255,255,255,0.08);
+  --text:#e8e4f0;
+  --heading:#fff;
+  --muted:#8a8a9a;
+  --magenta:#ff00cc;
+  --magenta-soft:rgba(255,0,204,0.12);
+  --magenta-glow:rgba(255,0,204,0.35);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+::selection{background:var(--magenta);color:#fff}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Outfit',sans-serif;font-weight:800;letter-spacing:-0.035em;color:var(--heading)}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);width:calc(100% - 6vw);max-width:1100px;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:rgba(7,5,15,0.6);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.1);border-radius:100px;z-index:100;transition:all 0.4s ease}
+nav.scrolled{background:rgba(7,5,15,0.92);box-shadow:0 16px 40px rgba(0,0,0,0.5)}
+.logo{font-size:15px;font-weight:800;color:#fff;display:flex;align-items:center;gap:8px}
+.logo-dot{width:8px;height:8px;background:var(--magenta);border-radius:50%;box-shadow:0 0 12px var(--magenta)}
+.logo span{color:var(--magenta)}
+.nav-btn{background:#fff;color:#000;padding:12px 22px;border-radius:100px;font-weight:700;font-size:13px;border:none;cursor:pointer;transition:all 0.2s;min-height:44px;display:inline-flex;align-items:center}
+.nav-btn:hover{background:var(--magenta);color:#fff;box-shadow:0 0 24px var(--magenta-glow)}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;position:relative;overflow:hidden}
+.hero-orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(80px)}
+.hero-orb-1{width:640px;height:640px;top:5%;right:-5%;background:radial-gradient(circle,rgba(255,0,204,0.35) 0%,rgba(139,43,255,0.20) 50%,transparent 75%);animation:float 9s ease-in-out infinite;filter:blur(100px)}
+.hero-orb-2{width:520px;height:520px;bottom:8%;left:-8%;background:radial-gradient(circle,rgba(139,43,255,0.28) 0%,rgba(255,0,204,0.14) 45%,transparent 75%);animation:float 11s ease-in-out infinite reverse;filter:blur(100px)}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-30px) scale(1.08)}}
+.hero-inner{max-width:820px;position:relative;z-index:2}
+#hero h1{font-size:clamp(3.5rem,8vw,6.5rem);line-height:0.92;margin-bottom:28px;text-transform:uppercase;letter-spacing:-0.02em}
+#hero h1 span{-webkit-text-stroke:2px var(--magenta);color:transparent;display:inline-block}
+#hero p{font-size:1.15rem;color:var(--muted);line-height:1.7;margin-bottom:40px;max-width:500px;margin-left:auto;margin-right:auto}
+.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero-btn{display:inline-flex;align-items:center;gap:8px;background:var(--magenta);color:#fff;padding:16px 36px;border-radius:100px;font-weight:700;font-size:15px;cursor:pointer;border:none;transition:all 0.25s;box-shadow:0 8px 32px var(--magenta-glow)}
+.hero-btn:hover{transform:translateY(-3px);box-shadow:0 12px 44px rgba(255,0,204,0.55)}
+.hero-btn.sec{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.2);box-shadow:none}
+.hero-btn.sec:hover{border-color:var(--magenta);color:var(--magenta);box-shadow:none}
+
+/* STATS */
+.stats-row{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;padding:32px 5%;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg)}
+.stat{text-align:center}
+.stat-v{font-size:2rem;font-weight:800;color:#fff;display:block}
+.stat-v span{color:var(--magenta)}
+.stat-l{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-top:4px;display:block}
+
+/* SOURCE STRIP */
+.source-strip{padding:20px 5%;background:var(--bg);border-top:1px solid var(--border);text-align:center}
+.source-strip h3{font-size:10px;color:var(--muted);font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:14px}
+.source-logos{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;opacity:0.7;font-family:'Outfit',sans-serif;font-weight:700;font-size:15px;color:#fff;letter-spacing:0.5px}
+
+/* PROOF/TESTIMONIALS */
+#proof{padding:72px 5%;background:var(--bg);border-top:1px solid var(--border)}
+.proof-wrap{max-width:1100px;margin:0 auto}
+.proof-head{text-align:center;margin-bottom:40px}
+.proof-head h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:8px}
+.proof-head p{color:var(--muted);font-size:0.95rem}
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.tm{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px}
+.tm-quote{font-size:0.95rem;line-height:1.7;color:var(--text);margin-bottom:20px}
+.tm-foot{display:flex;align-items:center;gap:12px;border-top:1px solid var(--border);padding-top:16px}
+.tm-tag{margin-left:0;font-size:10px;font-weight:700;color:var(--magenta);background:var(--magenta-soft);padding:4px 10px;border-radius:100px;text-transform:uppercase;letter-spacing:1px}
+
+/* FORM */
+#form-section{padding:72px 5%;background:var(--bg);border-top:1px solid var(--border)}
+.form-wrap{max-width:600px;margin:0 auto}
+.form-head{text-align:center;margin-bottom:20px}
+.form-head h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:8px}
+.form-head p{color:var(--muted);font-size:0.95rem}
+.form-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px}
+.form-note{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);background:var(--bg)}
+.footer-top{max-width:1100px;margin:0 auto;padding:48px 5% 28px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.f-brand .logo{font-size:17px;margin-bottom:14px}
+.f-brand p{font-size:13px;color:var(--muted);line-height:1.7;max-width:300px}
+.f-col h4{font-size:11px;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
+.f-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.f-col a{font-size:13px;color:var(--muted);transition:color .2s;display:inline-block;padding:4px 0;min-height:24px}
+.f-col a:hover{color:var(--magenta)}
+.footer-bottom{max-width:1100px;margin:0 auto;padding:18px 5%;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)}
+.fc span{color:var(--magenta)}
+
+/* Rating widget */
+#rating-widget{max-width:500px;margin:0 auto;padding:32px;background:rgba(255,0,204,0.08);border:1px solid rgba(255,0,204,0.15);border-radius:12px;text-align:center}
+#rating-stars{font-size:24px;margin-bottom:12px}
+#rating-text{font-size:16px;font-weight:600;color:#fff;margin-bottom:4px}
+#rating-count{font-size:13px;color:var(--muted);margin-bottom:8px}
+
+/* Mobile */
+@media (max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:24px}}
+@media (max-width:768px){
+  nav{padding:0 14px;height:54px}
+  #hero{padding:90px 16px 40px}
+  #hero h1{font-size:2.8rem}
+  #proof,#form-section{padding:48px 16px}
+  .testimonials{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr;padding:36px 16px 20px}
+  .footer-bottom{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){.hero-orb{animation:none};html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-    
-    <header>
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">
-                    Kandidaten<span class="logo-accent">Tekort</span>.nl
-                </div>
-                <div class="trust-badge">
-                    <span>✓</span> 10+ Jaar Ervaring
-                </div>
-            </div>
-            <div class="header-cta">
-                <div class="header-label">Meer Kandidaten</div>
-                <div class="header-value">+48%</div>
-            </div>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span>⚡</span> Gratis Vacature Analyse
-            </div>
-            <h1>
-                Waarom krijgen zij wél kandidaten?
-                <span class="highlight">En jij niet...</span>
-            </h1>
-            <p class="hero-subtitle">
-                127 bedrijven kregen het antwoord. Nu 48% meer sollicitaties.
-                <br><strong>Claim je gratis analyse →</strong> (24 uur resultaat)
-            </p>
-        </div>
-    </section>
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo"><span class="logo-dot"></span>kandidaten<span>tekort.</span>nl</div>
+  <a href="#form-section" class="nav-btn">Start gratis →</a>
+</nav>
 
-    <section class="form-section">
-        <div class="form-container">
-            <div class="form-card">
-                <h2 class="form-title">
-                    Start Je Gratis Vacature Analyse
-                </h2>
-                <p class="form-subtitle">
-                    Vul het korte formulier in en ontvang binnen 24 uur je persoonlijke rapport
-                </p>
-                
-                
-                <!-- Typeform embed with SDK callbacks for tracking -->
-                <div data-tf-widget="kalFRTCA" 
-                     data-tf-iframe-props="title=Gratis Vacature Analyse" 
-                     data-tf-medium="snippet"
-                     data-tf-on-ready="typeformReady"
-                     data-tf-on-submit="typeformSubmit"
-                     data-tf-on-question-changed="typeformQuestionChanged"
-                     style="width:100%;height:600px;">
-                </div>
-                <script src="https://embed.typeform.com/next/embed.js"></script>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-inner">
+    <h1 id="hero-h1">Jouw vacature<br><span>scoort</span></h1>
+    <p id="hero-sub">Krijg je expert analyse van 200+ technische vacatures. Concrete verbeterpunten binnen 24 uur. Geen gokwerk meer.</p>
+    <div class="hero-ctas">
+      <button class="hero-btn" onclick="document.getElementById('form-section').scrollIntoView({behavior:'smooth'})">Start gratis analyse →</button>
+      <a href="#proof" class="hero-btn sec">Bekijk voorbeeld ↓</a>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                Powered by <span class="footer-brand-accent">Recruitin</span>
-            </div>
-            <div class="footer-tagline">
-                Expert recruitment solutions voor technische vacatures
-            </div>
-            <div class="footer-copyright">
-                © 2025 Recruitin • KandidatenTekort.nl
-            </div>
-        </div>
-    </footer>
-    
-    <script>
-    // ============================================
-    // TYPEFORM SDK CALLBACKS (MUST BE IN GLOBAL SCOPE)
-    // ============================================
-    
-    // Called when Typeform is ready
-    function typeformReady() {
-        console.log('📋 Typeform ready - tracking InitiateCheckout');
-        if (typeof fbq !== 'undefined') {
-            fbq('track', 'InitiateCheckout', {
-                content_name: 'Gratis Vacature Check Form',
-                content_category: 'Lead Generation'
-            });
-        }
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'form_start', {
-                event_category: 'engagement',
-                event_label: 'typeform_ready'
-            });
-        }
-    }
-    
-    // CRITICAL: Called when form is submitted
-    function typeformSubmit(data) {
-        console.log('🎉 Typeform submitted - tracking Lead event');
-        console.log('Response ID:', data.responseId);
-        
-        // Facebook Pixel Lead Event
-        if (typeof fbq !== 'undefined') {
-            fbq('track', 'Lead', {
-                content_name: 'Gratis Vacature Check',
-                content_category: 'Lead Generation',
-                value: 249.00,
-                currency: 'EUR'
-            });
-            console.log('✅ FB Pixel: Lead event tracked!');
-        }
-        
-        // Google Analytics
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'generate_lead', {
-                event_category: 'conversion',
-                event_label: 'typeform_lead',
-                value: 249.00,
-                currency: 'EUR'
-            });
-            console.log('✅ GA4: generate_lead event tracked!');
-        }
-    }
-    
-    // Called when user navigates between questions
-    function typeformQuestionChanged(data) {
-        console.log('📝 Question changed:', data.ref);
-    }
-    
-    // ============================================
-    // UTM TRACKING & SCROLL EVENTS
-    // ============================================
-    (function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const utmSource = urlParams.get('utm_source') || '';
-        const utmMedium = urlParams.get('utm_medium') || '';
-        const utmCampaign = urlParams.get('utm_campaign') || '';
-        const utmContent = urlParams.get('utm_content') || '';
-        const stad = utmContent;
-        
-        // Update Typeform with hidden fields
-        window.addEventListener('load', function() {
-            const widget = document.querySelector('[data-tf-widget]');
-            if (widget && utmSource) {
-                widget.setAttribute('data-tf-hidden', 
-                    `utm_source=${utmSource},utm_medium=${utmMedium},utm_campaign=${utmCampaign},utm_content=${utmContent},stad=${stad}`);
-                
-                if (window.tf && window.tf.load) {
-                    window.tf.load();
-                }
-            }
-        });
-        
-        // Track ViewContent when user scrolls 50%
-        let viewContentFired = false;
-        window.addEventListener('scroll', function() {
-            if (!viewContentFired) {
-                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                if (scrollPercent >= 50) {
-                    if (typeof fbq !== 'undefined') {
-                        fbq('track', 'ViewContent', {
-                            content_name: 'Kandidatentekort Landing Page',
-                            content_category: 'Lead Generation'
-                        });
-                    }
-                    viewContentFired = true;
-                }
-            }
-        });
-        
-        // Fallback: postMessage listener (backup for SDK callbacks)
-        window.addEventListener('message', function(event) {
-            if (event.data && event.data.type === 'form-submit') {
-                console.log('📨 postMessage fallback: form-submit detected');
-                // SDK callback should handle this, but fire as backup
-                if (typeof fbq !== 'undefined' && !window.leadTracked) {
-                    window.leadTracked = true;
-                    fbq('track', 'Lead', {
-                        content_name: 'Gratis Vacature Check',
-                        content_category: 'Lead Generation',
-                        value: 249.00,
-                        currency: 'EUR'
-                    });
-                }
-            }
-        });
-    })();
-    </script>
+<!-- STATS -->
+<div class="stats-row">
+  <div class="stat"><span class="stat-v">41<span>/100</span></span><span class="stat-l">Gemiddelde score</span></div>
+  <div class="stat"><span class="stat-v">200<span>+</span></span><span class="stat-l">Vacatures geanalyseerd</span></div>
+  <div class="stat"><span class="stat-v">48<span>%</span></span><span class="stat-l">Meer sollicitaties</span></div>
+</div>
+
+<!-- SOURCE STRIP -->
+<div class="source-strip">
+  <h3>Data uit 10+ bronnen, waaronder</h3>
+  <div class="source-logos">
+    <span>LinkedIn</span><span>Indeed</span><span>Glassdoor</span><span>Stepstone</span><span>Monsterboard</span><span>UWV</span><span style="color:var(--magenta)">+meer</span>
+  </div>
+</div>
+
+<!-- PROOF/TESTIMONIALS -->
+<section id="proof">
+  <div class="proof-wrap">
+    <div class="proof-head">
+      <h2>Waarom dit echt werkt</h2>
+      <p>Van gokken naar gefundeerde beslissingen in 24 uur.</p>
+    </div>
+    <div class="testimonials">
+      <div class="tm">
+        <p class="tm-quote">Concrete aantallen per functie, regio en ervaringsniveau. Geen geschat gedoe.</p>
+        <div class="tm-foot"><div class="tm-tag">DATA</div></div>
+      </div>
+      <div class="tm">
+        <p class="tm-quote">24 uur in je mailbox. Meestal binnen 2-4 uur. Geen bureau, geen gesprek.</p>
+        <div class="tm-foot"><div class="tm-tag">SNELHEID</div></div>
+      </div>
+      <div class="tm">
+        <p class="tm-quote">€49/rapport na 2 gratis. Geen creditcard, geen haakjes, geen verkoopgesprek.</p>
+        <div class="tm-foot"><div class="tm-tag">EERLIJK</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rating widget -->
+<section style="padding:48px 5%;background:var(--bg);border-bottom:1px solid var(--border)">
+  <div id="rating-widget">
+    <div id="rating-stars">★★★★☆</div>
+    <div id="rating-text">Laden...</div>
+    <div id="rating-count">Bezig met laden...</div>
+    <p style="font-size:11px;color:var(--muted);margin:0">Gebaseerd op feedback van gebruikers</p>
+  </div>
+  <script>
+    fetch('https://kandidatentekort-automation.onrender.com/api/rating-stats')
+      .then(r=>r.json())
+      .then(d=>{
+        if(d.error)return;
+        const avg=d.average||0;const total=d.total||0;
+        const fullStars=Math.round(avg);
+        const stars='★'.repeat(Math.min(fullStars,5))+'☆'.repeat(Math.max(0,5-fullStars));
+        document.getElementById('rating-stars').textContent=stars;
+        document.getElementById('rating-text').textContent=avg>0?avg.toFixed(1)+'/5 sterren':'Nog geen reviews';
+        document.getElementById('rating-count').textContent=total>0?`van ${total} beoordelingen`:'Eerste reviews volgen';
+      })
+      .catch(e=>console.warn('Rating widget fetch failed:',e));
+  </script>
+</section>
+
+<!-- FORM -->
+<section id="form-section">
+  <div class="form-wrap">
+    <div class="form-head">
+      <h2>Klaar voor je analyse?</h2>
+      <p>Vul je vacature in en ontvang het rapport binnen 24 uur.</p>
+    </div>
+    <div class="form-card">
+      <div data-tf-widget="kalFRTCA" data-tf-iframe-props="title=Gratis Vacature Analyse" data-tf-medium="snippet" style="width:100%;height:600px;"></div>
+      <script src="https://embed.typeform.com/next/embed.js"></script>
+      <p class="form-note">Geen spam. Geen verkoopgesprek. Puur data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="f-brand">
+      <div class="logo"><span class="logo-dot"></span>kandidaten<span>tekort.</span>nl</div>
+      <p>Expert analyse voor technische vacatures. Live data, concrete verbeterpunten, binnen 24 uur.</p>
+    </div>
+    <div class="f-col"><h4>Product</h4><ul><li><a href="#hero">Home</a></li><li><a href="#proof">Hoe het werkt</a></li><li><a href="#form-section">Start</a></li></ul></div>
+    <div class="f-col"><h4>Legal</h4><ul><li><a href="https://recruitin.nl/privacy">Privacy</a></li><li><a href="https://recruitin.nl">Recruitin.nl</a></li></ul></div>
+    <div class="f-col"><h4>Contact</h4><ul><li><a href="mailto:warts@recruitin.nl">warts@recruitin.nl</a></li><li><a href="https://wa.me/31614314593">WhatsApp</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="fl" style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.3)">kandidatentekort<span>.</span>nl</div>
+    <div class="fc">&copy; 2026 · Powered by Recruitin B.V. · KvK 75303647</div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',scrollY>60)},{passive:true});
+if(typeof fbq!=='undefined'){document.querySelector('.hero-btn')?.addEventListener('click',()=>fbq('track','Lead'));}
+</script>
 </body>
 </html>
