@@ -1,5 +1,5 @@
 // netlify/functions/track-conversion.js
-// Facebook Conversions API - Server-Side Event Tracking
+// Facebook Conversions API - Server-Side Event Tracking + Render Webhook Integration
 
 const crypto = require('crypto');
 
@@ -7,6 +7,10 @@ const crypto = require('crypto');
 const FB_PIXEL_ID = '238226887541404'; // Correct Facebook Pixel ID
 const FB_ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
 const FB_API_VERSION = 'v18.0';
+
+// Render backend credentials
+const RENDER_WEBHOOK_URL = 'https://kandidatentekort-automation.onrender.com/test-async';
+const ADMIN_SECRET = process.env.ADMIN_SECRET;
 
 exports.handler = async (event, context) => {
   // Only allow POST requests
@@ -65,21 +69,23 @@ exports.handler = async (event, context) => {
     // Log for debugging
     console.log('Facebook Conversions API Response:', result);
 
-    // Also send to Render webhook for analysis pipeline (fire-and-forget)
+    // Also send to Render backend for analysis pipeline (fire-and-forget)
     // Extract form data from custom_data payload
     if (custom_data && custom_data.email) {
-      fetch('https://kandidatentekort-automation.onrender.com/webhook/typeform', {
+      const webhookPayload = {
+        email: custom_data.email,
+        voornaam: custom_data.first_name || '',
+        achternaam: custom_data.last_name || '',
+        bedrijf: custom_data.company || '',
+        telefoon: custom_data.phone || '',
+        source: 'kandidatentekort_netlify'
+      };
+
+      fetch(`${RENDER_WEBHOOK_URL}?secret=${encodeURIComponent(ADMIN_SECRET)}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: custom_data.email,
-          voornaam: custom_data.first_name || '',
-          achternaam: custom_data.last_name || '',
-          bedrijf: custom_data.company || '',
-          telefoon: custom_data.phone || '',
-          source: 'kandidatentekort_netlify'
-        })
-      }).catch(err => console.log('[webhook] Render POST error:', err.message));
+        body: JSON.stringify(webhookPayload)
+      }).catch(err => console.log('[test-async] Render POST error:', err.message));
     }
 
     return {
