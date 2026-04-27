@@ -65,6 +65,23 @@ exports.handler = async (event, context) => {
     // Log for debugging
     console.log('Facebook Conversions API Response:', result);
 
+    // Also send to Render webhook for analysis pipeline (fire-and-forget)
+    // Extract form data from custom_data payload
+    if (custom_data && custom_data.email) {
+      fetch('https://kandidatentekort-automation.onrender.com/webhook/typeform', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: custom_data.email,
+          voornaam: custom_data.first_name || '',
+          achternaam: custom_data.last_name || '',
+          bedrijf: custom_data.company || '',
+          telefoon: custom_data.phone || '',
+          source: 'kandidatentekort_netlify'
+        })
+      }).catch(err => console.log('[webhook] Render POST error:', err.message));
+    }
+
     return {
       statusCode: 200,
       headers: {
