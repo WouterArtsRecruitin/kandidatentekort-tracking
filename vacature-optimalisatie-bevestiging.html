@@ -34,14 +34,34 @@
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=238226887541404&ev=PageView&noscript=1"/></noscript>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+        /* Design System Variables (matching index.html) */
+        :root {
+            --bg: #07050f;
+            --bg2: #0e0a1a;
+            --surface: rgba(255,255,255,0.04);
+            --surface-2: rgba(255,255,255,0.02);
+            --border: rgba(255,255,255,0.08);
+            --border-strong: rgba(255,0,204,0.35);
+            --text: #E8E3F0;
+            --heading: #fff;
+            --muted: #8E89A0;
+            --magenta: #ff00cc;
+            --magenta-soft: rgba(255,0,204,0.12);
+            --magenta-glow: rgba(255,0,204,0.35);
+            --violet: #8B2BFF;
+        }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        html { -webkit-tap-highlight-color: rgba(255,0,204,0.25); }
+        a, button { -webkit-tap-highlight-color: rgba(255,0,204,0.25); }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background: #020617;
-            color: #cbd5e1;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -56,7 +76,7 @@
             position: fixed;
             inset: 0;
             z-index: 0;
-            background: radial-gradient(circle at top, rgba(30, 58, 138, 0.2), #020617 60%);
+            background: radial-gradient(circle at top, rgba(255,0,204,0.15), var(--bg) 60%);
         }
 
         /* Main Card */
@@ -65,9 +85,9 @@
             z-index: 10;
             width: 100%;
             max-width: 500px;
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(14, 10, 26, 0.8);
             backdrop-filter: blur(24px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border);
             border-radius: 24px;
             padding: 48px 32px;
             box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
@@ -91,7 +111,7 @@
             width: 80px;
             height: 80px;
             margin: 0 auto 32px;
-            background: rgba(16, 185, 129, 0.1);
+            background: rgba(255, 0, 204, 0.08);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -110,24 +130,25 @@
 
         /* Typography */
         h1 {
+            font-family: 'Outfit', sans-serif;
             font-size: 28px;
-            font-weight: 900;
-            color: white;
+            font-weight: 800;
+            color: var(--heading);
             margin-bottom: 16px;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.035em;
         }
 
         .subtitle {
             font-size: 16px;
-            color: #cbd5e1;
+            color: var(--text);
             margin-bottom: 32px;
             line-height: 1.6;
         }
 
         /* Email Box */
         .email-box {
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            background: var(--magenta-soft);
+            border: 1px solid var(--border-strong);
             border-radius: 16px;
             padding: 20px;
             margin-bottom: 32px;
@@ -136,35 +157,37 @@
         .email-label {
             font-size: 14px;
             font-weight: 600;
-            color: #93c5fd;
+            color: var(--magenta);
             margin-bottom: 8px;
         }
 
         .email-value {
             font-size: 15px;
-            color: #cbd5e1;
+            color: var(--text);
             word-break: break-all;
             margin-bottom: 12px;
         }
 
         .email-note {
             font-size: 12px;
-            color: #64748b;
+            color: var(--muted);
         }
 
         /* Divider */
         .divider {
             height: 1px;
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--border);
             margin: 32px 0;
         }
 
         /* Section Heading */
         .section-heading {
+            font-family: 'Outfit', sans-serif;
             font-size: 18px;
             font-weight: 700;
-            color: white;
+            color: var(--heading);
             margin-bottom: 24px;
+            letter-spacing: -0.025em;
         }
 
         /* Primary Button */
@@ -175,22 +198,23 @@
             gap: 12px;
             width: 100%;
             padding: 20px 32px;
-            background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+            background: linear-gradient(135deg, var(--magenta) 0%, var(--violet) 100%);
             color: white;
             font-size: 18px;
             font-weight: 800;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             border: none;
             border-radius: 16px;
             cursor: pointer;
             text-decoration: none;
-            box-shadow: 0 12px 28px rgba(255, 107, 53, 0.35);
+            box-shadow: 0 12px 28px rgba(255, 0, 204, 0.35);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             margin-bottom: 32px;
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 16px 40px rgba(255, 107, 53, 0.5);
+            box-shadow: 0 16px 40px var(--magenta-glow);
         }
 
         .btn-primary svg {
@@ -201,7 +225,7 @@
         /* Contact Options */
         .contact-label {
             font-size: 14px;
-            color: #94a3b8;
+            color: var(--muted);
             margin-bottom: 16px;
         }
 
@@ -217,30 +241,33 @@
             justify-content: center;
             gap: 12px;
             padding: 16px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: var(--surface);
+            border: 1px solid var(--border);
             border-radius: 12px;
             color: white;
             font-size: 14px;
             font-weight: 600;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             text-decoration: none;
             transition: all 0.3s;
         }
 
         .contact-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.1);
+            background: var(--surface);
+            border-color: var(--border-strong);
+            color: var(--magenta);
         }
 
         .contact-btn svg {
             width: 18px;
             height: 18px;
-            color: #10b981;
+            color: var(--magenta);
+            transition: color 0.3s;
         }
 
         .whatsapp-note {
             font-size: 11px;
-            color: #64748b;
+            color: var(--muted);
             font-style: italic;
             margin-top: 8px;
         }
@@ -248,7 +275,7 @@
         /* Footer Note */
         .footer-note {
             font-size: 12px;
-            color: #64748b;
+            color: var(--muted);
             margin-top: 32px;
         }
 
