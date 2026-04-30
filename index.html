@@ -384,6 +384,27 @@
 
         /* ═══ PREVIEW ═══ */
         #preview { padding: 80px 5%; background: var(--bg2); border-top: 1px solid var(--border); }
+
+        /* SAMPLES — echte PDF downloads */
+        #samples-download { padding: 80px 5%; background: var(--bg); border-top: 1px solid var(--border); }
+        .samples-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
+        .sample-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; transition: transform .2s, border-color .2s, box-shadow .2s; display: flex; flex-direction: column; }
+        .sample-card:hover { transform: translateY(-4px); border-color: var(--border-strong); box-shadow: 0 12px 40px rgba(255,0,204,0.15); }
+        .sample-card .sc-meta { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 10px; font-weight: 700; color: var(--magenta); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+        .sample-card h3 { font-size: 1.25rem; color: var(--heading); margin-bottom: 4px; line-height: 1.2; }
+        .sample-card .sc-sub { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+        .sample-card .sc-score-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; padding: 12px 14px; background: var(--surface-2); border-radius: 10px; }
+        .sample-card .sc-score { font-family: 'Outfit', sans-serif; font-size: 32px; font-weight: 800; line-height: 1; }
+        .sample-card .sc-score.green { color: var(--green); }
+        .sample-card .sc-score.amber { color: var(--amber); }
+        .sample-card .sc-score.red { color: var(--red); }
+        .sample-card .sc-score-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; line-height: 1.3; }
+        .sample-card .sc-tag { font-size: 12px; color: var(--text); margin-bottom: 18px; line-height: 1.5; flex-grow: 1; }
+        .sample-card .sc-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--magenta); color: #fff; padding: 12px 18px; border-radius: 100px; font-weight: 700; font-size: 14px; text-decoration: none; box-shadow: 0 6px 20px var(--magenta-glow); transition: transform .15s, box-shadow .15s; }
+        .sample-card .sc-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px var(--magenta-glow); }
+        .sample-card .sc-btn::after { content: "↓"; font-size: 13px; }
+        .samples-foot { text-align: center; margin-top: 32px; font-size: 13px; color: var(--muted); }
+        .samples-foot strong { color: var(--text); }
         .preview-wrap { max-width: 960px; margin: 0 auto; }
         .browser {
             border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
@@ -842,6 +863,64 @@
             </div>
         </section>
 
+        <!-- SAMPLE DOWNLOADS — echte PDF rapporten -->
+        <section id="samples-download">
+            <div class="section-head reveal">
+                <span class="chapter-num">Voorbeelden</span>
+                <h2>Download een echt rapport</h2>
+                <p>4 voorbeeldrapporten &mdash; pak de meest gelijke functie en zie precies wat je krijgt. PDF, 3 pagina&rsquo;s, geen email-gate.</p>
+            </div>
+            <div class="samples-grid reveal">
+                <article class="sample-card">
+                    <div class="sc-meta">Sample 01</div>
+                    <h3>Werkvoorbereider</h3>
+                    <div class="sc-sub">Bouw GWW Infra &middot; Gelderland</div>
+                    <div class="sc-score-row">
+                        <div class="sc-score amber">58</div>
+                        <div class="sc-score-lbl">Score / 100<br><span style="text-transform:none;letter-spacing:0;color:var(--text);font-weight:600">Middenveld</span></div>
+                    </div>
+                    <div class="sc-tag">Solide structuur, maar geen salaris &mdash; kost ~40% sollicitanten.</div>
+                    <a class="sc-btn" href="/samples/werkvoorbereider-bouw-gelderland.pdf" download data-sample="werkvoorbereider-bouw-gelderland" data-score="58">Download PDF</a>
+                </article>
+                <article class="sample-card">
+                    <div class="sc-meta">Sample 02</div>
+                    <h3>Monteur Elektrotechniek</h3>
+                    <div class="sc-sub">Installatietechniek &middot; Gelderland</div>
+                    <div class="sc-score-row">
+                        <div class="sc-score red">47</div>
+                        <div class="sc-score-lbl">Score / 100<br><span style="text-transform:none;letter-spacing:0;color:var(--text);font-weight:600">Onder gemiddeld</span></div>
+                    </div>
+                    <div class="sc-tag">Generieke titel in een 8.2x markt &mdash; kandidaten kiezen elders.</div>
+                    <a class="sc-btn" href="/samples/monteur-installatietechniek-gelderland.pdf" download data-sample="monteur-installatietechniek-gelderland" data-score="47">Download PDF</a>
+                </article>
+                <article class="sample-card">
+                    <div class="sc-meta">Sample 03</div>
+                    <h3>Projectleider</h3>
+                    <div class="sc-sub">Bouw GWW Infra &middot; Gelderland</div>
+                    <div class="sc-score-row">
+                        <div class="sc-score green">72</div>
+                        <div class="sc-score-lbl">Score / 100<br><span style="text-transform:none;letter-spacing:0;color:var(--text);font-weight:600">Sterk</span></div>
+                    </div>
+                    <div class="sc-tag">Duidelijke functie en salaris &mdash; werkgeversverhaal kan scherper.</div>
+                    <a class="sc-btn" href="/samples/projectleider-bouw-gelderland.pdf" download data-sample="projectleider-bouw-gelderland" data-score="72">Download PDF</a>
+                </article>
+                <article class="sample-card">
+                    <div class="sc-meta">Sample 04</div>
+                    <h3>Engineer</h3>
+                    <div class="sc-sub">High-tech &middot; Gelderland</div>
+                    <div class="sc-score-row">
+                        <div class="sc-score amber">53</div>
+                        <div class="sc-score-lbl">Score / 100<br><span style="text-transform:none;letter-spacing:0;color:var(--text);font-weight:600">Middenveld</span></div>
+                    </div>
+                    <div class="sc-tag">Te veel jargon, te weinig impact &mdash; engineers haken af bij stap 1.</div>
+                    <a class="sc-btn" href="/samples/engineer-hightech-gelderland.pdf" download data-sample="engineer-hightech-gelderland" data-score="53">Download PDF</a>
+                </article>
+            </div>
+            <div class="samples-foot reveal">
+                Geen email vereist &middot; <strong>direct downloaden</strong> &middot; jouw eigen rapport in 2u na invulling
+            </div>
+        </section>
+
         <!-- BENEFITS -->
         <section id="benefits">
             <div class="section-head reveal">
@@ -1211,6 +1290,24 @@
                 el.addEventListener('click', function() {
                     if (typeof gtag !== 'undefined') {
                         gtag('event', 'cta_click', { event_category: 'engagement', event_label: this.dataset.cta, link_url: this.href || '' });
+                    }
+                });
+            });
+
+            // Sample-PDF downloads: GA4 + Meta event
+            document.querySelectorAll('[data-sample]').forEach(el => {
+                el.addEventListener('click', function() {
+                    const slug = this.dataset.sample;
+                    const score = this.dataset.score;
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'sample_pdf_download', {
+                            event_category: 'engagement',
+                            event_label: slug,
+                            sample_score: score,
+                        });
+                    }
+                    if (typeof fbq !== 'undefined') {
+                        fbq('trackCustom', 'SamplePDFDownload', { slug: slug, score: Number(score) });
                     }
                 });
             });
